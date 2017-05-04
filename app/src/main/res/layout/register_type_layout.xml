@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/circle_color">
+        <ImageView
+            android:id="@+id/reg_type_return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/return_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_choose_role"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        >
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/reg_type_teacher"
+        android:gravity="center"
+        android:id="@+id/teacher"
+        android:textSize="20sp"
+        android:textColor="@color/deep_gray"
+        android:background="@drawable/draw_oral_bg"/>
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="@string/reg_type_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/teacher"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/parent"
+            android:textColor="@color/deep_gray"
+            android:background="@drawable/draw_oral_bg"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

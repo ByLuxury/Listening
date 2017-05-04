@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--轮播图-->
+    <fragment
+        android:id="@+id/fragment_cycle_viewpager_content"
+        android:name="com.zhoushuai.activity.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="180dip" />
+
+    <!--每日问答-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_everyday_ask_layout"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/acticity_title_selector"
+            android:clickable="true"
+            android:focusable="true"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/activity_every_ask"
+                android:textColor="@color/deep_gray"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/activity_every_ask_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/activity_every_ask_line_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/activity_every_ask_desc"
+            android:textColor="@color/activity_every_ask_desc"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/watch_more_pressed" />
+
+    <!--下部分布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_camp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/acticity_title_selector"
+            android:clickable="true"
+            android:focusable="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/activity_offline"
+            android:textColor="@color/deep_gray"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/activity_every_ask_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/activity_every_ask_line_color" />
+
+        <!--重庆夏令营-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/camp_summer_img"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/camp_cq" />
+
+            <TextView
+                android:id="@+id/camp_summer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/camp_summer_img"
+                android:text="重庆夏令营"
+                android:textColor="@color/deep_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/camp_one_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camp_summer_name"
+                android:layout_toRightOf="@id/camp_summer_img"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/activity_every_ask_desc"
+                android:text="培养自强不惜的精神，让孩子不抛弃、不放弃"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+<!--分割区-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/watch_more_pressed" />
+
+
+
+
+        <!--疯狂讲座-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/activity_famous_lesson_layout"
+            android:background="@drawable/acticity_title_selector"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/camp_lesson_name_text"
+                android:text="@string/famous_lesson"
+                android:textColor="@color/deep_gray"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/activity_every_ask_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/activity_every_ask_line_color" />
+
+        <!--疯狂讲座内容-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/camp_lesson_img"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/camp_lesson" />
+
+            <TextView
+                android:id="@+id/camp_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/camp_lesson_img"
+                android:text="疯狂公开课"
+                android:textColor="@color/deep_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/camp_two_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camp_two_name"
+                android:layout_toRightOf="@id/camp_lesson_img"
+                android:layout_marginLeft="10dp"
+                android:text="移动互联网的春天"
+                android:textColor="@color/activity_every_ask_desc"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/activity_every_ask_line_color" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

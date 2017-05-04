@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/circle_color">
+
+        <ImageView
+            android:id="@+id/reg_choose_circle__return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/return_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_user_login_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/reg_choose_circle_skip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_skip"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <EditText
+            android:id="@+id/edit_circle_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/reg_circle_name"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/deep_gray" />
+
+        <EditText
+            android:id="@+id/edit_school_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/reg_circle_school"
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/deep_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/text_user_done"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/reg_create_done"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/draw_rectangle"/>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_login_username_bg"
+        android:padding="10dp"
+        android:id="@+id/layout_user"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_phone_img"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_user_hint"
+            android:id="@+id/edit_account"
+            android:background="@null"
+            android:lines="1"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/search_frame"/>
+
+
+
+    <!--密码-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_login_username_bg"
+        android:padding="8dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_pwd_img"
+            />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_input_password"
+        android:lines="1"
+        android:id="@+id/edit_password"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#e6ebeb"
+         android:orientation="vertical"
+         >
+    <!--登录按钮-->
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+   <TextView
+       android:id="@+id/text_login_green"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:text="@string/text_user_done"
+       android:background="@drawable/login_button_selector"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:textSize="20sp"
+       android:layout_marginTop="6dp"
+       android:textColor="@color/activity_every_ask_desc"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+       />
+
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="@string/text_user_forget_pwd"
+           android:textSize="16sp"
+           android:id="@+id/forget_pwd"
+           android:textColor="@color/deep_gray"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="12dp"
+           />
+
+   </RelativeLayout>
+    <!--微信登录-->
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           android:paddingBottom="15dp">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/weixin_logo"
+               android:layout_marginTop="3dp"
+               android:layout_alignParentBottom="true"
+               android:src="@drawable/wexin_logo"/>
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/text_other_login"
+       android:text="@string/text_user_other_login"
+       android:layout_gravity="center"
+       android:layout_marginLeft="3dp"
+       android:layout_toRightOf="@id/weixin_logo"
+       android:textColor="@color/user_login_btn_bg"
+       android:layout_alignParentBottom="true"
+       android:textSize="17sp"/>
+       </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

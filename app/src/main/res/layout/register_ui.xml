@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_login_username_bg"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="25dp"
+            android:hint="@string/text_tip_phone"
+            android:id="@+id/reg_edit_phone"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/get_code_btn"
+            android:text="@string/text_get_code"
+            android:background="#e6ebeb"
+            android:gravity="center"
+            android:textColor="@color/deep_gray"
+           android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/search_frame"/>
+
+
+
+    <!--验证码-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_login_username_bg"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/text_check_code"
+            android:id="@+id/reg_edit_intputcode"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e6ebeb"
+        >
+
+            <TextView
+                android:id="@+id/text_reg_done"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/text_user_done"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/activity_every_ask_desc"
+                />
+
+
+    </LinearLayout>
+</LinearLayout>

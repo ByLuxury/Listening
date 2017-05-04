@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#7891f6">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/return_arrow"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在线讲座"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@color/activity_famous_top_bgcolor"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="【教育】如何提高孩子们的学习能力"
+    android:textSize="18sp"
+    android:textColor="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="学习,让世界更美好"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间:2017/04/20"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

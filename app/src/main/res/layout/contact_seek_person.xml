@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/activity_every_ask_color">
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:paddingLeft="5dp"
+           android:paddingTop="5dp"
+           android:gravity="center">
+    <ImageView
+        android:id="@+id/contact_request_friend_img"
+        android:layout_gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/contact_request" >
+    </ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/contact_friend_request"
+               android:id="@+id/contact_request_friend_text"
+               android:textSize="14sp"
+               android:textColor="@color/deep_gray"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/contact_request_friend_img"/>
+       </RelativeLayout>
+
+       <!--添加朋友-->
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:paddingLeft="5dp"
+           android:paddingTop="5dp"
+           android:gravity="center">
+           <ImageView
+               android:id="@+id/contact_add_friend_img"
+               android:layout_gravity="center"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/contact_add_friend" >
+           </ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="@string/contact_add_friend"
+               android:id="@+id/contact_add_friend_text"
+               android:textSize="13sp"
+               android:layout_centerHorizontal="true"
+               android:textColor="@color/deep_gray"
+               android:layout_below="@id/contact_add_friend_img"/>
+       </RelativeLayout>
+
+       <!--可能认识-->
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:paddingLeft="5dp"
+           android:paddingTop="5dp"
+           android:gravity="center">
+           <ImageView
+               android:id="@+id/contact_maybe_friend_img"
+               android:layout_gravity="center"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_weight="1"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/contact_maybe" >
+           </ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="@string/contact_maybe_know"
+               android:id="@+id/contact_maybe_friend_text"
+               android:textSize="13sp"
+               android:textColor="@color/deep_gray"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/contact_maybe_friend_img"/>
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:paddingLeft="5dp"
+           android:paddingTop="5dp"
+           android:gravity="center">
+           <ImageView
+               android:id="@+id/contact_nearby_friend_img"
+               android:layout_gravity="center"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_weight="1"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/contact_nearby" >
+           </ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="@string/contact_nearby"
+               android:id="@+id/contact_nearby_friend_text"
+               android:textSize="13sp"
+               android:textColor="@color/deep_gray"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/contact_nearby_friend_img"/>
+       </RelativeLayout>
+
+
+   </LinearLayout>
+
+</LinearLayout>

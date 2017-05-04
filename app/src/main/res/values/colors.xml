@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_24">#3d000000</color>
+    <color name="tab_color">#4b52d9</color>
+    <color name="search_frame">#cccccc</color>
+    <color name="deep_gray">#2f2f2f</color>
+    <color name="teacher_name_color">#41677a</color>
+    <color name="shade_gray">#b6b5b5</color>
+    <color name="watch_more_pressed">#f1f0f1</color>
+    <color name="watch_more_normal">#adacac</color>
+    <color name="circle_color">#829bfa</color>
+    <color name="circle_bg">#f3f3f3</color>
+    <color name="activity_every_ask_color">#f5f5f5</color>
+    <color name="activity_every_ask_line_color">#696767</color>
+    <color name="activity_every_ask_desc">#484747</color>
+    <color name="activity_famous_top_bgcolor">#1eb1f3</color>
+    <color name="user_login_top_bg">#e4eded</color>
+    <color name="user_login_username_bg">#ffffff</color>
+    <color name="user_login_btn_bg">#44be8f</color>
+    <color name="draw_oral_bg">#e7e5e5</color>
+    <color name="draw_oral_soild">#f05f4c</color>
+    <color name="rectangle">#5c6bc0</color>
+
+</resources>

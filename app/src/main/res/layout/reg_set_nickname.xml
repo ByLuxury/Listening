@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/circle_color">
+        <ImageView
+            android:id="@+id/reg_setnickname_return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/return_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_user_login_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/user_login_username_bg"
+    android:padding="10dp"
+    >
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:hint="@string/reg_input_nickname"
+        android:id="@+id/reg_edit_input_nickname"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        />
+
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/search_frame"/>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_login_username_bg"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/reg_input_pwd"
+            android:id="@+id/reg_edit_input_pwd"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"/>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/search_frame"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/reg_next_step"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/reg_next_step_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/draw_rectangle"/>
+    </LinearLayout>
+
+
+</LinearLayout>
